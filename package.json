@@ -4,9 +4,7 @@
   "version": "1.0.0",
   "license": "UNLICENSED",
   "scripts": {
-    "client": "cd client && yarn start",
-    "start": "cd api && nodemon Server.js",
-    "dev": "concurrently --kill-others-on-fail \"yarn start\" \"yarn client\""
+    "start": "cd api && node Server.js"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.4",

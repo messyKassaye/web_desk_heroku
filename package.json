@@ -1,0 +1,27 @@
+{
+  "name": "gulo-document",
+  "description": "Gulo document is a data collection app for anyone",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "scripts": {
+    "client": "cd client && yarn start",
+    "start": "cd api && nodemon Server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn start\" \"yarn client\""
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "body-parser": "^1.19.0",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "express-validation": "^3.0.8",
+    "http-status": "^1.5.0",
+    "joi": "^17.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.9",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.2"
+  }
+}

@@ -26,7 +26,7 @@ const MONGODB_HOSTNAME = process.env.MONGO_HOSTNAME
 const MONGODB_PORT = process.env.MONGO_PORT
 const MONGODB_DB = process.env.MONGO_DB
 const DB_URL = `mongodb://${MONGODB_HOSTNAME}:${MONGODB_PORT}/${MONGODB_DB}`
-db.connect(DB_URL)
+//db.connect(DB_URL)
 
 //application routes
 app.use('/api',routes)
